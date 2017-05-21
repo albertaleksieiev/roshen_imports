@@ -43,7 +43,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "deploy": "npm build && surge -p public --domain roshen-imports.surge.sh",
+    "deploy": "npm build &&  cp public/index.html public/200.html && surge -p public --domain roshen-imports.surge.sh",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
